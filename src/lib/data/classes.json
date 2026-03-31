@@ -1,0 +1,361 @@
+[
+  {
+    "id": "warrior",
+    "name": "Warrior",
+    "color": "#C79C6E",
+    "armorType": "plate",
+    "specs": [
+      {
+        "id": "warrior_arms",
+        "name": "Arms",
+        "role": "dps",
+        "stat": "strength",
+        "weaponTypes": ["axe", "mace", "sword", "polearm"]
+      },
+      {
+        "id": "warrior_fury",
+        "name": "Fury",
+        "role": "dps",
+        "stat": "strength",
+        "weaponTypes": ["axe", "mace", "sword"]
+      },
+      {
+        "id": "warrior_protection",
+        "name": "Protection",
+        "role": "tank",
+        "stat": "strength",
+        "weaponTypes": ["axe", "mace", "sword", "shield"]
+      }
+    ]
+  },
+  {
+    "id": "paladin",
+    "name": "Paladin",
+    "color": "#F58CBA",
+    "armorType": "plate",
+    "specs": [
+      {
+        "id": "paladin_holy",
+        "name": "Holy",
+        "role": "healer",
+        "stat": "intellect",
+        "weaponTypes": ["mace", "sword", "shield"]
+      },
+      {
+        "id": "paladin_protection",
+        "name": "Protection",
+        "role": "tank",
+        "stat": "strength",
+        "weaponTypes": ["axe", "mace", "sword", "shield"]
+      },
+      {
+        "id": "paladin_retribution",
+        "name": "Retribution",
+        "role": "dps",
+        "stat": "strength",
+        "weaponTypes": ["axe", "mace", "sword", "polearm"]
+      }
+    ]
+  },
+  {
+    "id": "hunter",
+    "name": "Hunter",
+    "color": "#ABD473",
+    "armorType": "mail",
+    "specs": [
+      {
+        "id": "hunter_beast_mastery",
+        "name": "Beast Mastery",
+        "role": "dps",
+        "stat": "agility",
+        "weaponTypes": ["bow", "crossbow", "gun"]
+      },
+      {
+        "id": "hunter_marksmanship",
+        "name": "Marksmanship",
+        "role": "dps",
+        "stat": "agility",
+        "weaponTypes": ["bow", "crossbow", "gun"]
+      },
+      {
+        "id": "hunter_survival",
+        "name": "Survival",
+        "role": "dps",
+        "stat": "agility",
+        "weaponTypes": ["polearm", "staff", "axe"]
+      }
+    ]
+  },
+  {
+    "id": "rogue",
+    "name": "Rogue",
+    "color": "#FFF569",
+    "armorType": "leather",
+    "specs": [
+      {
+        "id": "rogue_assassination",
+        "name": "Assassination",
+        "role": "dps",
+        "stat": "agility",
+        "weaponTypes": ["dagger"]
+      },
+      {
+        "id": "rogue_outlaw",
+        "name": "Outlaw",
+        "role": "dps",
+        "stat": "agility",
+        "weaponTypes": ["axe", "mace", "sword"]
+      },
+      { "id": "rogue_subtlety", "name": "Subtlety", "role": "dps", "stat": "agility", "weaponTypes": ["dagger"] }
+    ]
+  },
+  {
+    "id": "priest",
+    "name": "Priest",
+    "color": "#FFFFFF",
+    "armorType": "cloth",
+    "specs": [
+      {
+        "id": "priest_discipline",
+        "name": "Discipline",
+        "role": "healer",
+        "stat": "intellect",
+        "weaponTypes": ["dagger", "mace", "staff", "wand", "off-hand"]
+      },
+      {
+        "id": "priest_holy",
+        "name": "Holy",
+        "role": "healer",
+        "stat": "intellect",
+        "weaponTypes": ["dagger", "mace", "staff", "wand", "off-hand"]
+      },
+      {
+        "id": "priest_shadow",
+        "name": "Shadow",
+        "role": "dps",
+        "stat": "intellect",
+        "weaponTypes": ["dagger", "mace", "staff", "wand", "off-hand"]
+      }
+    ]
+  },
+  {
+    "id": "death_knight",
+    "name": "Death Knight",
+    "color": "#C41F3B",
+    "armorType": "plate",
+    "specs": [
+      {
+        "id": "death_knight_blood",
+        "name": "Blood",
+        "role": "tank",
+        "stat": "strength",
+        "weaponTypes": ["axe", "mace", "sword", "polearm"]
+      },
+      {
+        "id": "death_knight_frost",
+        "name": "Frost",
+        "role": "dps",
+        "stat": "strength",
+        "weaponTypes": ["axe", "mace", "sword"]
+      },
+      {
+        "id": "death_knight_unholy",
+        "name": "Unholy",
+        "role": "dps",
+        "stat": "strength",
+        "weaponTypes": ["axe", "mace", "sword", "polearm"]
+      }
+    ]
+  },
+  {
+    "id": "shaman",
+    "name": "Shaman",
+    "color": "#0070DE",
+    "armorType": "mail",
+    "specs": [
+      {
+        "id": "shaman_elemental",
+        "name": "Elemental",
+        "role": "dps",
+        "stat": "intellect",
+        "weaponTypes": ["mace", "dagger", "staff", "off-hand"]
+      },
+      {
+        "id": "shaman_enhancement",
+        "name": "Enhancement",
+        "role": "dps",
+        "stat": "agility",
+        "weaponTypes": ["axe", "mace", "fist"]
+      },
+      {
+        "id": "shaman_restoration",
+        "name": "Restoration",
+        "role": "healer",
+        "stat": "intellect",
+        "weaponTypes": ["mace", "dagger", "staff", "shield"]
+      }
+    ]
+  },
+  {
+    "id": "mage",
+    "name": "Mage",
+    "color": "#69CCF0",
+    "armorType": "cloth",
+    "specs": [
+      {
+        "id": "mage_arcane",
+        "name": "Arcane",
+        "role": "dps",
+        "stat": "intellect",
+        "weaponTypes": ["dagger", "sword", "staff", "wand", "off-hand"]
+      },
+      {
+        "id": "mage_fire",
+        "name": "Fire",
+        "role": "dps",
+        "stat": "intellect",
+        "weaponTypes": ["dagger", "sword", "staff", "wand", "off-hand"]
+      },
+      {
+        "id": "mage_frost",
+        "name": "Frost",
+        "role": "dps",
+        "stat": "intellect",
+        "weaponTypes": ["dagger", "sword", "staff", "wand", "off-hand"]
+      }
+    ]
+  },
+  {
+    "id": "warlock",
+    "name": "Warlock",
+    "color": "#9482C9",
+    "armorType": "cloth",
+    "specs": [
+      {
+        "id": "warlock_affliction",
+        "name": "Affliction",
+        "role": "dps",
+        "stat": "intellect",
+        "weaponTypes": ["dagger", "sword", "staff", "wand", "off-hand"]
+      },
+      {
+        "id": "warlock_demonology",
+        "name": "Demonology",
+        "role": "dps",
+        "stat": "intellect",
+        "weaponTypes": ["dagger", "sword", "staff", "wand", "off-hand"]
+      },
+      {
+        "id": "warlock_destruction",
+        "name": "Destruction",
+        "role": "dps",
+        "stat": "intellect",
+        "weaponTypes": ["dagger", "sword", "staff", "wand", "off-hand"]
+      }
+    ]
+  },
+  {
+    "id": "monk",
+    "name": "Monk",
+    "color": "#00FF96",
+    "armorType": "leather",
+    "specs": [
+      {
+        "id": "monk_brewmaster",
+        "name": "Brewmaster",
+        "role": "tank",
+        "stat": "agility",
+        "weaponTypes": ["staff", "polearm"]
+      },
+      {
+        "id": "monk_windwalker",
+        "name": "Windwalker",
+        "role": "dps",
+        "stat": "agility",
+        "weaponTypes": ["fist", "axe", "mace", "sword"]
+      },
+      {
+        "id": "monk_mistweaver",
+        "name": "Mistweaver",
+        "role": "healer",
+        "stat": "intellect",
+        "weaponTypes": ["staff", "off-hand"]
+      }
+    ]
+  },
+  {
+    "id": "druid",
+    "name": "Druid",
+    "color": "#FF7D0A",
+    "armorType": "leather",
+    "specs": [
+      {
+        "id": "druid_balance",
+        "name": "Balance",
+        "role": "dps",
+        "stat": "intellect",
+        "weaponTypes": ["staff", "off-hand"]
+      },
+      { "id": "druid_feral", "name": "Feral", "role": "dps", "stat": "agility", "weaponTypes": ["staff", "polearm"] },
+      {
+        "id": "druid_guardian",
+        "name": "Guardian",
+        "role": "tank",
+        "stat": "agility",
+        "weaponTypes": ["staff", "polearm"]
+      },
+      {
+        "id": "druid_restoration",
+        "name": "Restoration",
+        "role": "healer",
+        "stat": "intellect",
+        "weaponTypes": ["staff", "off-hand"]
+      }
+    ]
+  },
+  {
+    "id": "demon_hunter",
+    "name": "Demon Hunter",
+    "color": "#A330C9",
+    "armorType": "leather",
+    "specs": [
+      { "id": "demon_hunter_havoc", "name": "Havoc", "role": "dps", "stat": "agility", "weaponTypes": ["warglaives"] },
+      {
+        "id": "demon_hunter_vengeance",
+        "name": "Vengeance",
+        "role": "tank",
+        "stat": "agility",
+        "weaponTypes": ["warglaives"]
+      }
+    ]
+  },
+  {
+    "id": "evoker",
+    "name": "Evoker",
+    "color": "#33937F",
+    "armorType": "mail",
+    "specs": [
+      {
+        "id": "evoker_devastation",
+        "name": "Devastation",
+        "role": "dps",
+        "stat": "intellect",
+        "weaponTypes": ["staff", "off-hand"]
+      },
+      {
+        "id": "evoker_preservation",
+        "name": "Preservation",
+        "role": "healer",
+        "stat": "intellect",
+        "weaponTypes": ["staff", "off-hand"]
+      },
+      {
+        "id": "evoker_augmentation",
+        "name": "Augmentation",
+        "role": "dps",
+        "stat": "intellect",
+        "weaponTypes": ["staff", "off-hand"]
+      }
+    ]
+  }
+]

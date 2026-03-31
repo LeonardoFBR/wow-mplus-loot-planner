@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wow-gold: #f59e0b;
+  --color-wow-gold-light: #fbbf24;
+  --color-wow-gold-dark: #d97706;
+  --color-wow-arcane: #8b5cf6;
+  --color-wow-arcane-light: #a78bfa;
+  --color-wow-arcane-dark: #7c3aed;
+  --color-wow-fel: #10b981;
+  --color-surface-900: #0c0a14;
+  --color-surface-800: #13111c;
+  --color-surface-700: #1a1726;
+  --color-surface-600: #231f31;
+  --color-surface-500: #2d2840;
+  --color-surface-400: #3d3654;
+  --color-surface-300: #524a6e;
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-surface-900);
+  color: #e2dff0;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface-800);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-400);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-surface-300);
+}
