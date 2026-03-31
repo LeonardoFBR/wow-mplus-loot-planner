@@ -60,20 +60,6 @@
 					</select>
 				</div>
 			</div>
-
-			{#if !selectedSpec}
-				<div class="spec-grid">
-					{#each currentClass.specs as spec}
-						<button
-							class="spec-button"
-							style="--class-color: {currentClass.color}"
-							onclick={() => onspecchange(spec.id)}
-						>
-							{spec.name}
-						</button>
-					{/each}
-				</div>
-			{/if}
 		{/if}
 	</div>
 </div>
