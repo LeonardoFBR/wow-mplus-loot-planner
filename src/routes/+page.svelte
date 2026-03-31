@@ -1,72 +1,85 @@
 <script lang="ts">
-  import SlotSelector from '$lib/components/SlotSelector.svelte';
-  import Filters from '$lib/components/Filters.svelte';
-  import ResultsList from '$lib/components/ResultsList.svelte';
-  import { calculateDungeonResults, isItemEligible } from '$lib/utils';
-  import lootData from '$lib/data/loot.json';
-  import { browser } from '$app/environment';
-  import { WOW_CLASSES } from '$lib/constants';
+	import SlotSelector from '$lib/components/SlotSelector.svelte';
+	import Filters from '$lib/components/Filters.svelte';
+	import ResultsList from '$lib/components/ResultsList.svelte';
+	import { calculateDungeonResults, isItemEligible } from '$lib/utils';
+	import lootData from '$lib/data/loot.json';
+	import { browser } from '$app/environment';
+	import { WOW_CLASSES } from '$lib/constants';
 
-  let selectedClass = $state('');
-  let selectedSpec = $state('');
-  let selectedSlots = $state<string[]>([]);
+	function loadState() {
+		if (!browser) return { selectedClass: '', selectedSpec: '', selectedSlots: [] };
+		try {
+			const saved = localStorage.getItem('wow-planner-state');
+			if (saved) {
+				const state = JSON.parse(saved);
+				return {
+					selectedClass: state.selectedClass ?? '',
+					selectedSpec: state.selectedSpec ?? '',
+					selectedSlots: state.selectedSlots ?? []
+				};
+			}
+		} catch {}
+		return { selectedClass: '', selectedSpec: '', selectedSlots: [] };
+	}
 
-  $effect(() => {
-    if (!browser) return;
-    const saved = localStorage.getItem('wow-planner-state');
-    if (!saved) return;
-    try {
-      const state = JSON.parse(saved);
-      selectedClass = state.selectedClass ?? '';
-      selectedSpec = state.selectedSpec ?? '';
-      selectedSlots = state.selectedSlots ?? [];
-    } catch {}
-  });
+	const initialState = loadState();
+	let selectedClass = $state(initialState.selectedClass);
+	let selectedSpec = $state(initialState.selectedSpec);
+	let selectedSlots = $state<string[]>(initialState.selectedSlots);
 
-  let saveTimeout: ReturnType<typeof setTimeout>;
-  $effect(() => {
-    if (!browser) return;
-    clearTimeout(saveTimeout);
-    saveTimeout = setTimeout(() => {
-      localStorage.setItem('wow-planner-state', JSON.stringify({ selectedClass, selectedSpec, selectedSlots }));
-    }, 300);
-  });
+	let saveTimeout: ReturnType<typeof setTimeout>;
+	let hasInteracted = $state(false);
 
-  function handleClassChange(classId: string) {
-    selectedClass = classId;
-    selectedSpec = '';
-  }
+	function handleClassChange(classId: string) {
+		hasInteracted = true;
+		selectedClass = classId;
+		selectedSpec = '';
+	}
 
-  function handleSpecChange(specId: string) {
-    selectedSpec = specId;
-  }
+	function handleSpecChange(specId: string) {
+		hasInteracted = true;
+		selectedSpec = specId;
+	}
 
-  function handleSlotToggle(slotId: string) {
-    if (selectedSlots.includes(slotId)) {
-      selectedSlots = selectedSlots.filter((s) => s !== slotId);
-    } else {
-      selectedSlots = [...selectedSlots, slotId];
-    }
-  }
+	function handleSlotToggle(slotId: string) {
+		hasInteracted = true;
+		if (selectedSlots.includes(slotId)) {
+			selectedSlots = selectedSlots.filter((s) => s !== slotId);
+		} else {
+			selectedSlots = [...selectedSlots, slotId];
+		}
+	}
 
-  let results = $derived(calculateDungeonResults(lootData.dungeons, selectedSlots, selectedClass, selectedSpec));
+	$effect(() => {
+		const state = { selectedClass, selectedSpec, selectedSlots };
+		if (!hasInteracted || !browser) return;
+		clearTimeout(saveTimeout);
+		saveTimeout = setTimeout(() => {
+			localStorage.setItem('wow-planner-state', JSON.stringify(state));
+		}, 300);
+	});
 
-  $effect(() => {
-    const cls = selectedClass ? WOW_CLASSES.find((c) => c.id === selectedClass) : undefined;
-    const spec = cls && selectedSpec ? cls.specs.find((s) => s.id === selectedSpec) : undefined;
-    console.log('=== DEBUG: Items elegibles por clase/spec ===');
-    console.log(`Clase: ${cls?.name || 'Ninguna'} | Spec: ${spec?.name || 'Ninguna'}`);
-    for (const dungeon of lootData.dungeons) {
-      const eligible = dungeon.loot.filter((item) => isItemEligible(item, cls, spec));
-      console.log(`📦 ${dungeon.name} (${eligible.length} items):`);
-      for (const item of eligible) {
-        console.log(`   - ${item.name}`);
-      }
-    }
-    console.log('===========================');
-  });
+	let results = $derived(
+		calculateDungeonResults(lootData.dungeons, selectedSlots, selectedClass, selectedSpec)
+	);
 
-  let isReady = $derived(selectedSlots.length > 0);
+	$effect(() => {
+		const cls = selectedClass ? WOW_CLASSES.find(c => c.id === selectedClass) : undefined;
+		const spec = cls && selectedSpec ? cls.specs.find(s => s.id === selectedSpec) : undefined;
+		console.log('=== DEBUG: Items elegibles por clase/spec ===');
+		console.log(`Clase: ${cls?.name || 'Ninguna'} | Spec: ${spec?.name || 'Ninguna'}`);
+		for (const dungeon of lootData.dungeons) {
+			const eligible = dungeon.loot.filter(item => isItemEligible(item, cls, spec));
+			console.log(`📦 ${dungeon.name} (${eligible.length} items):`);
+			for (const item of eligible) {
+				console.log(`   - ${item.name}`);
+			}
+		}
+		console.log('===========================');
+	});
+
+	let isReady = $derived(selectedSlots.length > 0);
 </script>
 
 <div class="app-container">
@@ -212,6 +225,8 @@
     top: 120px;
     left: calc((100vw - 1280px) / 2 + 24px);
     width: 260px;
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
     z-index: 10;
   }
 
