@@ -139,6 +139,7 @@
     flex-direction: column;
     background: radial-gradient(ellipse at 20% 0%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
       radial-gradient(ellipse at 80% 100%, rgba(245, 158, 11, 0.05) 0%, transparent 50%), var(--color-surface-900);
+    overflow-x: hidden;
   }
 
   .app-header {
@@ -223,7 +224,7 @@
     gap: 16px;
     position: fixed;
     top: 120px;
-    left: calc((100vw - 1280px) / 2 + 24px);
+    left: max(24px, calc((100vw - 1280px) / 2 + 24px));
     width: 260px;
     max-height: calc(100vh - 140px);
     overflow-y: auto;
@@ -301,6 +302,8 @@
       position: static;
       width: 100%;
       margin-bottom: 20px;
+      max-height: none;
+      overflow-y: visible;
     }
   }
 
