@@ -2,10 +2,9 @@
   import SlotSelector from '$lib/components/SlotSelector.svelte';
   import Filters from '$lib/components/Filters.svelte';
   import ResultsList from '$lib/components/ResultsList.svelte';
-  import { calculateDungeonResults, isItemEligible } from '$lib/utils';
+  import { calculateDungeonResults } from '$lib/utils';
   import lootData from '$lib/data/loot.json';
   import { browser } from '$app/environment';
-  import { WOW_CLASSES } from '$lib/constants';
 
   function loadState() {
     if (!browser) return { selectedClass: '', selectedSpec: '', selectedSlots: [] };
@@ -28,7 +27,6 @@
   let selectedSpec = $state(initialState.selectedSpec);
   let selectedSlots = $state<string[]>(initialState.selectedSlots);
 
-  let saveTimeout: ReturnType<typeof setTimeout>;
   let hasInteracted = $state(false);
 
   function handleClassChange(classId: string) {
@@ -54,28 +52,15 @@
   $effect(() => {
     const state = { selectedClass, selectedSpec, selectedSlots };
     if (!hasInteracted || !browser) return;
-    clearTimeout(saveTimeout);
-    saveTimeout = setTimeout(() => {
+    const timeout = setTimeout(() => {
       localStorage.setItem('wow-planner-state', JSON.stringify(state));
     }, 300);
+    return () => clearTimeout(timeout);
   });
 
   let results = $derived(calculateDungeonResults(lootData.dungeons, selectedSlots, selectedClass, selectedSpec));
 
-  $effect(() => {
-    const cls = selectedClass ? WOW_CLASSES.find((c) => c.id === selectedClass) : undefined;
-    const spec = cls && selectedSpec ? cls.specs.find((s) => s.id === selectedSpec) : undefined;
-    console.log('=== DEBUG: Items elegibles por clase/spec ===');
-    console.log(`Clase: ${cls?.name || 'Ninguna'} | Spec: ${spec?.name || 'Ninguna'}`);
-    for (const dungeon of lootData.dungeons) {
-      const eligible = dungeon.loot.filter((item) => isItemEligible(item, cls, spec));
-      console.log(`📦 ${dungeon.name} (${eligible.length} items):`);
-      for (const item of eligible) {
-        console.log(`   - ${item.name}`);
-      }
-    }
-    console.log('===========================');
-  });
+
 
   let isReady = $derived(selectedSlots.length > 0);
 </script>
@@ -297,7 +282,7 @@
     flex: 1;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 24px 0 304px;
     width: 100%;
     box-sizing: border-box;
     display: flex;

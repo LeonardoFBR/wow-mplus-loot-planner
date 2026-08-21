@@ -24,7 +24,6 @@ export interface GearSlot {
 	id: string;
 	name: string;
 	icon: string;
-	gridArea: string;
 }
 
 export type Spec = {

@@ -112,32 +112,4 @@
 		padding: 8px;
 	}
 
-	.spec-grid {
-		display: flex;
-		gap: 8px;
-		flex-wrap: wrap;
-	}
-
-	.spec-button {
-		flex: 1;
-		min-width: 80px;
-		padding: 10px 16px;
-		background: var(--color-surface-600);
-		border: 2px solid var(--color-surface-400);
-		border-radius: 10px;
-		color: #e2dff0;
-		font-size: 13px;
-		font-weight: 500;
-		font-family: var(--font-body);
-		cursor: pointer;
-		transition: all 0.2s ease;
-		text-align: center;
-	}
-
-	.spec-button:hover {
-		border-color: var(--class-color, var(--color-wow-arcane));
-		background: var(--color-surface-500);
-		color: var(--class-color, var(--color-wow-arcane-light));
-		box-shadow: 0 0 12px color-mix(in srgb, var(--class-color, var(--color-wow-arcane)) 30%, transparent);
-	}
 </style>

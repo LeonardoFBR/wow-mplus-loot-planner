@@ -73,7 +73,7 @@ export function isItemEligible(item: LootItem, cls?: WoWClass, spec?: Spec): boo
 	if (item.roles && item.roles.length > 0) {
 		if (spec?.role) {
 			if (!item.roles.includes(spec.role)) return false;
-		} else if (cls) {
+		} else {
 			if (!cls.specs.some(s => s.role && item.roles!.includes(s.role))) return false;
 		}
 	}

@@ -3,23 +3,23 @@ import type { GearSlot, WoWClass } from './types';
 import classData from './data/classes.json';
 
 export const GEAR_SLOTS: GearSlot[] = [
-	{ id: 'head', name: 'Head', icon: '👑', gridArea: 'head' },
-	{ id: 'neck', name: 'Neck', icon: '📿', gridArea: 'neck' },
-	{ id: 'shoulders', name: 'Shoulders', icon: '🛡️', gridArea: 'shoulders' },
-	{ id: 'back', name: 'Back', icon: '🧣', gridArea: 'back' },
-	{ id: 'chest', name: 'Chest', icon: '👕', gridArea: 'chest' },
-	{ id: 'wrist', name: 'Wrist', icon: '⌚', gridArea: 'wrist' },
-	{ id: 'hands', name: 'Hands', icon: '🧤', gridArea: 'hands' },
-	{ id: 'waist', name: 'Waist', icon: '🔗', gridArea: 'waist' },
-	{ id: 'legs', name: 'Legs', icon: '👖', gridArea: 'legs' },
-	{ id: 'feet', name: 'Feet', icon: '👢', gridArea: 'feet' },
-	{ id: 'ring', name: 'Ring', icon: '💍', gridArea: 'ring' },
-	{ id: 'trinket', name: 'Trinket', icon: '✨', gridArea: 'trinket' },
-	{ id: 'main-hand', name: '1H Weapon', icon: '⚔️', gridArea: 'weapon' },
-	{ id: 'two-hand', name: '2H Weapon', icon: '🔨', gridArea: 'weapon' },
-	{ id: 'shield', name: 'Shield', icon: '🛡️', gridArea: 'shield' },
-	{ id: 'off-hand', name: 'Off-hand', icon: '🔮', gridArea: 'offhand' },
-	{ id: 'ranged', name: 'Ranged', icon: '🏹', gridArea: 'ranged' }
+	{ id: 'head', name: 'Head', icon: '👑' },
+	{ id: 'neck', name: 'Neck', icon: '📿' },
+	{ id: 'shoulders', name: 'Shoulders', icon: '🛡️' },
+	{ id: 'back', name: 'Back', icon: '🧣' },
+	{ id: 'chest', name: 'Chest', icon: '👕' },
+	{ id: 'wrist', name: 'Wrist', icon: '⌚' },
+	{ id: 'hands', name: 'Hands', icon: '🧤' },
+	{ id: 'waist', name: 'Waist', icon: '🔗' },
+	{ id: 'legs', name: 'Legs', icon: '👖' },
+	{ id: 'feet', name: 'Feet', icon: '👢' },
+	{ id: 'ring', name: 'Ring', icon: '💍' },
+	{ id: 'trinket', name: 'Trinket', icon: '✨' },
+	{ id: 'main-hand', name: '1H Weapon', icon: '⚔️' },
+	{ id: 'two-hand', name: '2H Weapon', icon: '🔨' },
+	{ id: 'shield', name: 'Shield', icon: '🛡️' },
+	{ id: 'off-hand', name: 'Off-hand', icon: '🔮' },
+	{ id: 'ranged', name: 'Ranged', icon: '🏹' }
 ];
 
 export const WOW_CLASSES: WoWClass[] = classData as WoWClass[];
