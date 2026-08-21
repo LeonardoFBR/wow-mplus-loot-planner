@@ -329,7 +329,7 @@
 
   @media (max-width: 600px) {
     .main-content {
-      padding: 16px 12px;
+      padding: 90px 12px 24px 12px;
     }
 
     .footer-section {
