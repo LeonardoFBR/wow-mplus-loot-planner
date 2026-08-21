@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { DungeonResult } from '$lib/types';
+	import { getSlotName } from '$lib/constants';
 
 	interface Props {
 		results: DungeonResult[];
@@ -25,10 +26,12 @@
 <div class="results-panel">
 	<h2 class="font-display text-xl font-semibold text-wow-gold mb-2 tracking-wide">
 		Dungeon Rankings
-	</h2>
-	<p class="text-surface-300 text-sm mb-5">
-		Best dungeons for your selected slots — ranked by probability
-	</p>
+	</h2>		<p class="text-surface-300 text-sm mb-5">
+			Best dungeons for your selected slots — ranked by probability
+			{#if results.length > 0}
+				<span class="dungeon-count">({results.length} dungeon{results.length !== 1 ? 's' : ''} match)</span>
+			{/if}
+		</p>
 
 	{#if results.length === 0}
 		<div class="empty-state">
@@ -85,8 +88,8 @@
 						<div class="matching-slots">
 							<span class="slots-label">Covers:</span>
 							<div class="slots-list">
-								{#each result.matchingSlots as slot}
-									<span class="slot-tag">{slot}</span>
+							{#each result.matchingSlots as slot}
+								<span class="slot-tag">{getSlotName(slot)}</span>
 								{/each}
 							</div>
 						</div>
@@ -270,5 +273,10 @@
 		border: 1px solid rgba(139, 92, 246, 0.3);
 		border-radius: 4px;
 		color: var(--color-wow-arcane-light);
+	}
+
+	.dungeon-count {
+		color: var(--color-wow-gold);
+		font-weight: 500;
 	}
 </style>

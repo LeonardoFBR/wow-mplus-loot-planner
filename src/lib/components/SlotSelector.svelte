@@ -4,9 +4,10 @@
 	interface Props {
 		selectedSlots: string[];
 		ontoggle: (slotId: string) => void;
+		onclearall?: () => void;
 	}
 
-	let { selectedSlots, ontoggle }: Props = $props();
+	let { selectedSlots, ontoggle, onclearall }: Props = $props();
 
 	const armorSlots = GEAR_SLOTS.filter(s =>
 		['head', 'neck', 'shoulders', 'back', 'chest', 'wrist', 'hands', 'waist', 'legs', 'feet'].includes(s.id)
@@ -125,6 +126,11 @@
 		<div class="slot-counter">
 			<span class="counter-value">{selectedSlots.length}</span>
 			<span class="counter-label">slot{selectedSlots.length !== 1 ? 's' : ''} selected</span>
+			{#if onclearall}
+				<button class="clear-btn" onclick={onclearall} aria-label="Clear all slots">
+					✕ Clear
+				</button>
+			{/if}
 		</div>
 	{/if}
 </div>
@@ -325,6 +331,25 @@
 		color: var(--color-surface-300);
 		text-transform: uppercase;
 		letter-spacing: 0.5px;
+	}
+
+	.clear-btn {
+		margin-left: auto;
+		background: none;
+		border: 1px solid var(--color-surface-400);
+		color: var(--color-surface-300);
+		font-size: 11px;
+		padding: 4px 10px;
+		border-radius: 6px;
+		cursor: pointer;
+		transition: all 0.2s ease;
+		font-family: var(--font-body);
+	}
+
+	.clear-btn:hover {
+		border-color: #ef4444;
+		color: #ef4444;
+		background: rgba(239, 68, 68, 0.1);
 	}
 
 	@media (max-width: 400px) {

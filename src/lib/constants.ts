@@ -2,6 +2,30 @@ import type { GearSlot, WoWClass } from './types';
 
 import classData from './data/classes.json';
 
+export const SLOT_NAME_MAP: Record<string, string> = {
+	'head': 'Head',
+	'neck': 'Neck',
+	'shoulders': 'Shoulders',
+	'back': 'Back',
+	'chest': 'Chest',
+	'wrist': 'Wrist',
+	'hands': 'Hands',
+	'waist': 'Waist',
+	'legs': 'Legs',
+	'feet': 'Feet',
+	'ring': 'Ring',
+	'trinket': 'Trinket',
+	'main-hand': '1H Weapon',
+	'two-hand': '2H Weapon',
+	'shield': 'Shield',
+	'off-hand': 'Off-hand',
+	'ranged': 'Ranged'
+};
+
+export function getSlotName(slotId: string): string {
+	return SLOT_NAME_MAP[slotId] ?? slotId;
+}
+
 export const GEAR_SLOTS: GearSlot[] = [
 	{ id: 'head', name: 'Head', icon: '👑' },
 	{ id: 'neck', name: 'Neck', icon: '📿' },

@@ -38,15 +38,18 @@
   function handleSpecChange(specId: string) {
     hasInteracted = true;
     selectedSpec = specId;
-  }
-
-  function handleSlotToggle(slotId: string) {
+  }	  function handleSlotToggle(slotId: string) {
     hasInteracted = true;
     if (selectedSlots.includes(slotId)) {
       selectedSlots = selectedSlots.filter((s) => s !== slotId);
     } else {
       selectedSlots = [...selectedSlots, slotId];
     }
+  }
+
+  function handleClearAll() {
+    hasInteracted = true;
+    selectedSlots = [];
   }
 
   $effect(() => {
@@ -90,8 +93,7 @@
 
   <main class="main-content">
     <aside class="sidebar">
-      <Filters {selectedClass} {selectedSpec} onclasschange={handleClassChange} onspecchange={handleSpecChange} />
-      <SlotSelector {selectedSlots} ontoggle={handleSlotToggle} />
+      <Filters {selectedClass} {selectedSpec} onclasschange={handleClassChange} onspecchange={handleSpecChange} />	  <SlotSelector {selectedSlots} ontoggle={handleSlotToggle} onclearall={handleClearAll} />
     </aside>
 
     <div class="results-area">

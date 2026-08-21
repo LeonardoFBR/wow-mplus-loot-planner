@@ -9,29 +9,40 @@ export function calculateDungeonResults(
 ): DungeonResult[] {
 	if (selectedSlots.length === 0) return [];
 
+	// Pre-compute class/spec data once (not per-item)
 	const selectedClass = selectedClassId ? WOW_CLASSES.find(c => c.id === selectedClassId) : undefined;
 	const selectedSpec = selectedClass && selectedSpecId ? selectedClass.specs.find(s => s.id === selectedSpecId) : undefined;
+
+	// Pre-compute weapon types and primary stats for the selected class/spec
+	const classWeaponTypes = selectedClass ? getClassWeaponTypes(selectedClass, selectedSpec) : [];
+	const classStats = selectedClass
+		? new Set((selectedSpec ? [selectedSpec] : selectedClass.specs).map(s => s.stat.toLowerCase()))
+		: new Set<string>();
 
 	const results: DungeonResult[] = [];
 
 	for (const dungeon of dungeons) {
-		const classEligibleLoot = dungeon.loot.filter((item) => isItemEligible(item, selectedClass, selectedSpec));
-		const eligibleLoot = classEligibleLoot.filter((item) => selectedSlots.includes(item.slot));
+		let totalItems = 0;
+		let desiredItems = 0;
+		const matchingSlotsSet = new Set<string>();
 
-		const totalItems = classEligibleLoot.length;
-		const desiredItems = eligibleLoot.length;
+		for (const item of dungeon.loot) {
+			if (!isItemEligible(item, selectedClass, selectedSpec, classWeaponTypes, classStats)) continue;
+			totalItems++;
+			if (selectedSlots.includes(item.slot)) {
+				desiredItems++;
+				matchingSlotsSet.add(item.slot);
+			}
+		}
 
 		if (totalItems === 0 || desiredItems === 0) continue;
 
-		const matchingSlots = [...new Set(eligibleLoot.map((i) => i.slot))];
-		const pSuccess = desiredItems / totalItems;
-
 		results.push({
 			name: dungeon.name,
-			probability: pSuccess,
+			probability: desiredItems / totalItems,
 			desiredItems,
 			totalItems,
-			matchingSlots
+			matchingSlots: [...matchingSlotsSet]
 		});
 	}
 
@@ -66,7 +77,13 @@ function hasPrimaryStat(stats: string[]): boolean {
 	return stats.some(s => PRIMARY_STATS.includes(s));
 }
 
-export function isItemEligible(item: LootItem, cls?: WoWClass, spec?: Spec): boolean {
+export function isItemEligible(
+	item: LootItem,
+	cls?: WoWClass,
+	spec?: Spec,
+	cachedWeaponTypes?: string[],
+	cachedClassStats?: Set<string>
+): boolean {
 	if (!cls) return true;
 
 	// Check role eligibility if specified on item (e.g. Tank/Healer trinkets)
@@ -87,7 +104,7 @@ export function isItemEligible(item: LootItem, cls?: WoWClass, spec?: Spec): boo
 	if (item.armorType === 'weapon') {
 		if (!item.type) return false;
 
-		const weaponTypes = getClassWeaponTypes(cls, spec);
+		const weaponTypes = cachedWeaponTypes ?? getClassWeaponTypes(cls, spec);
 		const normalizedItemType = item.type.toLowerCase().replace(/s$/, '').replace(/ weapon$/, '');
 		const matchesType = weaponTypes.some(wt => {
 			const normalizedWt = wt.toLowerCase().replace(/s$/, '').replace(/ weapon$/, '');
@@ -97,13 +114,11 @@ export function isItemEligible(item: LootItem, cls?: WoWClass, spec?: Spec): boo
 		if (!matchesType) return false;
 
 		const itemStats = getItemStats(item);
-		if (spec?.stat) {
-			if (itemStats.length > 0 && hasPrimaryStat(itemStats)) {
+		if (itemStats.length > 0 && hasPrimaryStat(itemStats)) {
+			if (spec?.stat) {
 				return itemStats.includes(spec.stat.toLowerCase());
-			}
-		} else if (cls) {
-			const clsStats = new Set(cls.specs.map(s => s.stat.toLowerCase()));
-			if (itemStats.length > 0 && hasPrimaryStat(itemStats)) {
+			} else {
+				const clsStats = cachedClassStats ?? new Set(cls.specs.map(s => s.stat.toLowerCase()));
 				return itemStats.some(stat => clsStats.has(stat));
 			}
 		}
@@ -117,8 +132,8 @@ export function isItemEligible(item: LootItem, cls?: WoWClass, spec?: Spec): boo
 		if (itemStats.length > 0 && hasPrimaryStat(itemStats)) {
 			if (spec?.stat) {
 				return itemStats.includes(spec.stat.toLowerCase());
-			} else if (cls) {
-				const clsStats = new Set(cls.specs.map(s => s.stat.toLowerCase()));
+			} else {
+				const clsStats = cachedClassStats ?? new Set(cls.specs.map(s => s.stat.toLowerCase()));
 				return itemStats.some(stat => clsStats.has(stat));
 			}
 		}
