@@ -1,1101 +1,1212 @@
 {
   "dungeons": [
     {
-      "name": "Algeth'ar Academy",
+      "name": "Altar of Fangs",
       "loot": [
         {
-          "slot": "ring",
-          "name": "Platinum Star Band",
+          "slot": "neck",
+          "name": "Strand of Warding Fangs",
           "armorType": "accessory"
         },
         {
-          "slot": "back",
-          "name": "Potion-Stained Cloak",
+          "slot": "ring",
+          "name": "Band of the Amani Warlord",
           "armorType": "accessory"
         },
-
         {
           "slot": "trinket",
-          "name": "Algeth'ar Puzzle Box",
+          "name": "Coiled Fangstone",
           "armorType": "accessory",
           "stats": ["agility", "strength"]
         },
         {
           "slot": "trinket",
-          "name": "Dragon Games Equipment",
+          "name": "Vile Vial of Volatile Venom",
           "armorType": "accessory",
-          "stats": ["strength"]
+          "stats": ["agility", "strength"]
         },
         {
           "slot": "trinket",
-          "name": "Emerald Coach's Whistle",
+          "name": "Knot of Writhing Serpents",
           "armorType": "accessory",
-          "stats": ["intellect"]
+          "stats": ["strength", "agility", "intellect"]
         },
-
+        {
+          "slot": "trinket",
+          "name": "Tattered Amani War Banner",
+          "armorType": "accessory",
+          "stats": ["strength", "agility"]
+        },
         {
           "slot": "chest",
-          "name": "Bronze Challenger's Robe",
+          "name": "Primordial Robe of Rites",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "hands",
+          "name": "Handwraps of Blasphemous Rites",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "legs",
+          "name": "Leggings of Entwined Serpents",
           "armorType": "cloth"
         },
         {
           "slot": "head",
-          "name": "Organized Pontificator's Mask",
-          "armorType": "cloth"
-        },
-        {
-          "slot": "hands",
-          "name": "Experimental Safety Gloves",
-          "armorType": "cloth"
-        },
-
-        {
-          "slot": "hands",
-          "name": "Ruby Contestant's Gloves",
+          "name": "Spare Speaker's Hood",
           "armorType": "leather"
         },
-        { "slot": "wrist", "name": "Frenzyroot Cuffs", "armorType": "leather" },
-
         {
           "slot": "shoulders",
-          "name": "Scaled Commencement Spaulders",
-          "armorType": "mail"
+          "name": "Snakeskin Spaulders",
+          "armorType": "leather"
         },
-        {
-          "slot": "waist",
-          "name": "Azure Belt of Competition",
-          "armorType": "mail"
-        },
-        {
-          "slot": "feet",
-          "name": "Boots of Explosive Growth",
-          "armorType": "mail"
-        },
-
         {
           "slot": "chest",
-          "name": "Breastplate of Proven Knowledge",
+          "name": "Chestguard of Corroded Scales",
+          "armorType": "mail"
+        },
+        {
+          "slot": "wrist",
+          "name": "Hydra Scale Wristguards",
+          "armorType": "mail"
+        },
+        {
+          "slot": "chest",
+          "name": "Aged Interwoven Scaleplate",
           "armorType": "plate"
         },
         {
           "slot": "legs",
-          "name": "Venerated Professor's Greaves",
+          "name": "Ancient General's Obsidian Pillars",
           "armorType": "plate"
         },
-
         {
-          "slot": "main-hand",
-          "name": "Spellbane Cutlass",
-          "armorType": "weapon",
-          "type": "sword",
-          "stats": ["strength"]
+          "slot": "feet",
+          "name": "Poison-Proof Stompers",
+          "armorType": "plate"
         },
         {
           "slot": "main-hand",
-          "name": "Spellboon Saber",
+          "name": "Venom-Etched Crescent",
           "armorType": "weapon",
-          "type": "sword",
+          "type": "axe",
+          "stats": ["strength", "agility"]
+        },
+        {
+          "slot": "main-hand",
+          "name": "Sharpened Lightwood Slasher",
+          "armorType": "weapon",
+          "type": "dagger",
+          "stats": ["agility"]
+        },
+        {
+          "slot": "main-hand",
+          "name": "Polished Lightwood Channeler",
+          "armorType": "weapon",
+          "type": "dagger",
           "stats": ["intellect"]
         },
         {
           "slot": "main-hand",
-          "name": "Mystakria's Harvester",
+          "name": "Hydraspine Twinblade",
           "armorType": "weapon",
           "type": "warglaive",
-          "stats": ["agility", "intellect"]
-        },
-
-        {
-          "slot": "two-hand",
-          "name": "Algeth'ar Hedgecleaver",
-          "armorType": "weapon",
-          "type": "axe",
-          "stats": ["strength"]
-        },
-        {
-          "slot": "two-hand",
-          "name": "Obsidian Goaltending Spire",
-          "armorType": "weapon",
-          "type": "staff",
           "stats": ["agility"]
         },
         {
           "slot": "two-hand",
-          "name": "Final Grade",
+          "name": "Vile Writhefang Glaive",
+          "armorType": "weapon",
+          "type": "polearm",
+          "stats": ["agility", "strength"]
+        },
+        {
+          "slot": "two-hand",
+          "name": "Toxin-Coated Warstaff",
           "armorType": "weapon",
           "type": "staff",
-          "stats": ["intellect"]
+          "stats": ["agility", "intellect"]
         },
-
+        {
+          "slot": "ranged",
+          "name": "Ancestral Amani Recurve",
+          "armorType": "weapon",
+          "type": "bow",
+          "stats": ["agility"]
+        },
         {
           "slot": "off-hand",
-          "name": "Vexamus' Expulsion Rod",
+          "name": "Nocuous Focal Fang",
           "armorType": "weapon",
           "type": "off-hand",
           "stats": ["intellect"]
         }
       ]
     },
-
     {
-      "name": "Magisters' Terrace",
+      "name": "Murder Row",
       "loot": [
         {
+          "slot": "neck",
+          "name": "Pendant of Malefic Fury",
+          "armorType": "accessory"
+        },
+        {
           "slot": "ring",
-          "name": "Bifurcation Band",
+          "name": "Signet of Snarling Servitude",
           "armorType": "accessory"
         },
         {
           "slot": "back",
-          "name": "Defiant Defender's Drape",
+          "name": "Speakeasy Shroud",
           "armorType": "accessory"
         },
-
         {
           "slot": "trinket",
-          "name": "Jelly Replicator",
+          "name": "Manaheart's Binding Flame",
+          "armorType": "accessory",
+          "stats": ["strength", "agility"],
+          "roles": ["tank"]
+        },
+        {
+          "slot": "trinket",
+          "name": "Freightrunner's Flask",
           "armorType": "accessory",
           "stats": ["agility", "strength"]
         },
         {
           "slot": "trinket",
-          "name": "Eye of the Drowning Void",
-          "armorType": "accessory",
-          "stats": ["agility", "intellect"]
-        },
-        {
-          "slot": "trinket",
-          "name": "Refueling Orb",
-          "armorType": "accessory",
-          "stats": ["intellect"]
-        },
-
-        {
-          "slot": "chest",
-          "name": "Wraps of Umbral Descent",
-          "armorType": "cloth"
-        },
-        {
-          "slot": "wrist",
-          "name": "Wraps of Watchful Wrath",
-          "armorType": "cloth"
-        },
-        {
-          "slot": "waist",
-          "name": "Clasp of Compliance",
-          "armorType": "cloth"
-        },
-
-        {
-          "slot": "head",
-          "name": "Spellsnap Shadowmask",
-          "armorType": "leather"
-        },
-        { "slot": "wrist", "name": "Custodial Cuffs", "armorType": "leather" },
-        {
-          "slot": "hands",
-          "name": "Gloves of Viscous Goo",
-          "armorType": "leather"
-        },
-        {
-          "slot": "feet",
-          "name": "Domanaar's Dire Treads",
-          "armorType": "leather"
-        },
-
-        { "slot": "head", "name": "Vortex Visage", "armorType": "mail" },
-        { "slot": "chest", "name": "Voidwarped Oozemail", "armorType": "mail" },
-        { "slot": "waist", "name": "Sunlash's Sunsash", "armorType": "mail" },
-        {
-          "slot": "legs",
-          "name": "Leggings of Orderly Conduct",
-          "armorType": "mail"
-        },
-
-        {
-          "slot": "chest",
-          "name": "Arcane Guardian's Shell",
-          "armorType": "plate"
-        },
-        { "slot": "waist", "name": "Shadowsplit Girdle", "armorType": "plate" },
-        {
-          "slot": "legs",
-          "name": "Legplates of Lingering Dusk",
-          "armorType": "plate"
-        },
-        { "slot": "feet", "name": "Oathsworn Stompers", "armorType": "plate" },
-
-        {
-          "slot": "main-hand",
-          "name": "Splitshroud Stinger",
-          "armorType": "weapon",
-          "type": "dagger",
-          "stats": ["intellect"]
-        },
-        {
-          "slot": "main-hand",
-          "name": "Malfeasance Mallet",
-          "armorType": "weapon",
-          "type": "mace",
-          "stats": ["strength"]
-        },
-        {
-          "slot": "main-hand",
-          "name": "Shadowslash Slicer",
-          "armorType": "weapon",
-          "type": "sword",
-          "stats": ["agility"]
-        },
-        {
-          "slot": "main-hand",
-          "name": "Resolute Runeglaive",
-          "armorType": "weapon",
-          "type": "warglaive",
-          "stats": ["agility", "intellect"]
-        },
-
-        {
-          "slot": "two-hand",
-          "name": "Whirling Voidcleaver",
-          "armorType": "weapon",
-          "type": "axe",
-          "stats": ["strength"]
-        },
-
-        {
-          "slot": "shield",
-          "name": "Ward of the Spellbreaker",
-          "armorType": "weapon",
-          "type": "shield",
-          "stats": ["intellect", "strength"]
-        }
-      ]
-    },
-
-    {
-      "name": "Windrunner Spire",
-      "loot": [
-        {
-          "slot": "neck",
-          "name": "Pendant of Aching Grief",
-          "armorType": "accessory"
-        },
-
-        {
-          "slot": "trinket",
-          "name": "Heart of Wind",
+          "name": "Resonant Bellowstone",
           "armorType": "accessory",
           "stats": ["strength", "agility", "intellect"]
         },
         {
           "slot": "trinket",
-          "name": "Latch's Crooked Hook",
+          "name": "Unstable Felheart Crystal",
           "armorType": "accessory",
-          "stats": ["agility", "strength"]
-        },
-        {
-          "slot": "trinket",
-          "name": "Kroluk's Warbanner",
-          "armorType": "accessory",
-          "stats": ["agility", "strength"]
-        },
-        {
-          "slot": "trinket",
-          "name": "Emberwing Feather",
-          "armorType": "accessory",
-          "stats": ["agility", "intellect"]
-        },
-
-        { "slot": "head", "name": "Brambledawn Halo", "armorType": "cloth" },
-        {
-          "slot": "shoulders",
-          "name": "Mantle of Dark Devotion",
-          "armorType": "cloth"
-        },
-        {
-          "slot": "legs",
-          "name": "Commander's Faded Breeches",
-          "armorType": "cloth"
-        },
-
-        {
-          "slot": "shoulders",
-          "name": "Fallen Grunt's Mantle",
-          "armorType": "leather"
+          "stats": ["intellect"],
+          "roles": ["healer"]
         },
         {
           "slot": "chest",
-          "name": "Vest of the Howling Gale",
-          "armorType": "leather"
+          "name": "Summoner's Searing Shirt",
+          "armorType": "cloth"
         },
-        { "slot": "waist", "name": "Snapvine Cinch", "armorType": "leather" },
         {
-          "slot": "legs",
-          "name": "Legwraps of Lingering Legacies",
-          "armorType": "leather"
+          "slot": "wrist",
+          "name": "Nibbling Armbands",
+          "armorType": "cloth"
         },
-
-        {
-          "slot": "shoulders",
-          "name": "Spaulders of Arrow's Flight",
-          "armorType": "mail"
-        },
-        { "slot": "wrist", "name": "Amberfrond Bracers", "armorType": "mail" },
         {
           "slot": "hands",
-          "name": "Grips of Forgotten Honor",
-          "armorType": "mail"
+          "name": "Counterfeit Clutches",
+          "armorType": "cloth"
         },
-        { "slot": "feet", "name": "Whipcoil Sabatons", "armorType": "mail" },
-
-        {
-          "slot": "head",
-          "name": "Fletcher's Faded Faceplate",
-          "armorType": "plate"
-        },
-        { "slot": "hands", "name": "Embergrove Grasps", "armorType": "plate" },
-        { "slot": "waist", "name": "Riphook Defender", "armorType": "plate" },
         {
           "slot": "feet",
-          "name": "Sabatons of Furious Revenge",
+          "name": "Tempestuous Sandals",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "head",
+          "name": "Vilefiend's Guise",
+          "armorType": "leather"
+        },
+        {
+          "slot": "wrist",
+          "name": "Fury-fletched Armlets",
+          "armorType": "leather"
+        },
+        {
+          "slot": "hands",
+          "name": "Gauntlets of Fevered Defense",
+          "armorType": "leather"
+        },
+        {
+          "slot": "legs",
+          "name": "Breeches of Deft Deals",
+          "armorType": "leather"
+        },
+        {
+          "slot": "shoulders",
+          "name": "Jangling Felpaulets",
+          "armorType": "mail"
+        },
+        {
+          "slot": "legs",
+          "name": "Lithiel's Linked Leggings",
+          "armorType": "mail"
+        },
+        {
+          "slot": "head",
+          "name": "Greathelm of Temptation",
           "armorType": "plate"
         },
-
+        {
+          "slot": "shoulders",
+          "name": "Cinderfury Shoulderguards",
+          "armorType": "plate"
+        },
+        {
+          "slot": "wrist",
+          "name": "Overseer's Vambraces",
+          "armorType": "plate"
+        },
         {
           "slot": "main-hand",
-          "name": "Warworn Cleaver",
+          "name": "Bladesorrow",
+          "armorType": "weapon",
+          "type": "dagger",
+          "stats": ["agility", "intellect"]
+        },
+        {
+          "slot": "two-hand",
+          "name": "Nibbles' Training Rod",
           "armorType": "weapon",
           "type": "axe",
           "stats": ["strength"]
         },
         {
-          "slot": "main-hand",
-          "name": "Excavating Cudgel",
-          "armorType": "weapon",
-          "type": "mace",
-          "stats": ["intellect"]
-        },
-
-        {
           "slot": "two-hand",
-          "name": "Roostwarden's Bough",
+          "name": "Nibbles' Training Rod",
           "armorType": "weapon",
           "type": "staff",
-          "stats": ["agility"]
+          "stats": ["intellect", "agility"]
         },
-        {
-          "slot": "two-hand",
-          "name": "Emberdawn Defender",
-          "armorType": "weapon",
-          "type": "sword",
-          "stats": ["strength"]
-        },
-
         {
           "slot": "ranged",
-          "name": "Hurricane's Heart",
-          "armorType": "weapon",
-          "type": "bow",
-          "stats": ["agility"]
-        },
-
-        {
-          "slot": "trinket",
-          "name": "Sigil of the Restless Heart",
-          "armorType": "accessory",
-          "stats": ["intellect"]
-        }
-      ]
-    },
-
-    {
-      "name": "Pit of Saron",
-      "loot": [
-        {
-          "slot": "neck",
-          "name": "Barbed Ymirheim Choker",
-          "armorType": "accessory"
-        },
-        {
-          "slot": "ring",
-          "name": "Purloined Wedding Ring",
-          "armorType": "accessory"
-        },
-        {
-          "slot": "back",
-          "name": "Cloak of the Fallen Cardinal",
-          "armorType": "accessory"
-        },
-
-        {
-          "slot": "trinket",
-          "name": "Rotting Globule",
-          "armorType": "accessory",
-          "stats": ["agility", "strength"]
-        },
-        {
-          "slot": "trinket",
-          "name": "Nevermelting Ice Crystal",
-          "armorType": "accessory",
-          "stats": ["intellect"]
-        },
-
-        { "slot": "chest", "name": "Palebone Robes", "armorType": "cloth" },
-        {
-          "slot": "wrist",
-          "name": "Wristguards of Subterranean Moss",
-          "armorType": "cloth"
-        },
-        {
-          "slot": "waist",
-          "name": "Braid of Salt and Fire",
-          "armorType": "cloth"
-        },
-        { "slot": "feet", "name": "Ice-Steeped Sandals", "armorType": "cloth" },
-
-        {
-          "slot": "wrist",
-          "name": "Chewed Leather Wristguards",
-          "armorType": "leather"
-        },
-        {
-          "slot": "waist",
-          "name": "Flayer's Black Belt",
-          "armorType": "leather"
-        },
-        {
-          "slot": "legs",
-          "name": "Shaggy Wyrmleather Leggings",
-          "armorType": "leather"
-        },
-
-        {
-          "slot": "head",
-          "name": "Horns of the Spurned Val'kyr",
-          "armorType": "mail"
-        },
-        {
-          "slot": "shoulders",
-          "name": "Spurned Val'kyr Shoulderguards",
-          "armorType": "mail"
-        },
-        {
-          "slot": "waist",
-          "name": "Scabrous Zombie Leather Belt",
-          "armorType": "mail"
-        },
-        {
-          "slot": "legs",
-          "name": "Black Dragonskin Breeches",
-          "armorType": "mail"
-        },
-
-        {
-          "slot": "head",
-          "name": "Skeleton Lord's Cranium",
-          "armorType": "plate"
-        },
-        {
-          "slot": "shoulders",
-          "name": "Shoulderplates of Frozen Blood",
-          "armorType": "plate"
-        },
-        { "slot": "chest", "name": "Frost Wyrm Ribcage", "armorType": "plate" },
-        { "slot": "waist", "name": "Bent Gold Belt", "armorType": "plate" },
-
-        {
-          "slot": "main-hand",
-          "name": "Krick's Beetle Stabber",
-          "armorType": "weapon",
-          "type": "dagger",
-          "stats": ["agility"]
-        },
-        {
-          "slot": "main-hand",
-          "name": "Surgeon's Needle",
-          "armorType": "weapon",
-          "type": "dagger",
-          "stats": ["intellect"]
-        },
-
-        {
-          "slot": "two-hand",
-          "name": "Garfrost's Two-Ton Hammer",
-          "armorType": "weapon",
-          "type": "mace",
-          "stats": ["strength"]
-        },
-
-        {
-          "slot": "ranged",
-          "name": "Rimebane Rifle",
+          "name": "Sinseared Repeater",
           "armorType": "weapon",
           "type": "gun",
           "stats": ["agility"]
         }
       ]
     },
-
     {
-      "name": "Nexus-Point Xenas",
-      "loot": [
-        {
-          "slot": "ring",
-          "name": "Occlusion of Void",
-          "armorType": "accessory"
-        },
-        {
-          "slot": "ring",
-          "name": "Omission of Light",
-          "armorType": "accessory"
-        },
-
-        {
-          "slot": "trinket",
-          "name": "Mark of Light",
-          "armorType": "accessory",
-          "stats": ["strength"]
-        },
-        {
-          "slot": "trinket",
-          "name": "Whisper of the Duskwraith",
-          "armorType": "accessory",
-          "stats": ["intellect"]
-        },
-
-        {
-          "slot": "shoulders",
-          "name": "Nysarra's Mantle",
-          "armorType": "cloth"
-        },
-        {
-          "slot": "hands",
-          "name": "Fractured Fingerguards",
-          "armorType": "cloth"
-        },
-        { "slot": "legs", "name": "Leyline Leggings", "armorType": "cloth" },
-
-        { "slot": "chest", "name": "Maledict Vest", "armorType": "leather" },
-        {
-          "slot": "hands",
-          "name": "Corewright's Zappers",
-          "armorType": "leather"
-        },
-        {
-          "slot": "feet",
-          "name": "Eclipse Espadrilles",
-          "armorType": "leather"
-        },
-
-        { "slot": "wrist", "name": "Corewarden Cuffs", "armorType": "mail" },
-        {
-          "slot": "legs",
-          "name": "Greaves of the Divine Guile",
-          "armorType": "mail"
-        },
-
-        {
-          "slot": "shoulders",
-          "name": "Searing Spaulders",
-          "armorType": "plate"
-        },
-        { "slot": "wrist", "name": "Kasreth's Bindings", "armorType": "plate" },
-        {
-          "slot": "legs",
-          "name": "Lightscarred Cuisses",
-          "armorType": "plate"
-        },
-
-        {
-          "slot": "main-hand",
-          "name": "Radiant Slicer",
-          "armorType": "weapon",
-          "type": "dagger",
-          "stats": ["agility"]
-        },
-        {
-          "slot": "main-hand",
-          "name": "Dreadflail Bludgeon",
-          "armorType": "weapon",
-          "type": "mace",
-          "stats": ["agility"]
-        },
-
-        {
-          "slot": "two-hand",
-          "name": "Corespark Multitool",
-          "armorType": "weapon",
-          "type": "staff",
-          "stats": ["intellect"]
-        },
-
-        {
-          "slot": "back",
-          "name": "Fluxweave Cloak",
-          "armorType": "accessory"
-        }
-      ]
-    },
-
-    {
-      "name": "Seat of the Triumvirate",
+      "name": "Voidscar Arena",
       "loot": [
         {
           "slot": "neck",
-          "name": "Necklace of the Twisting Void",
+          "name": "Graft of the Domanaar",
           "armorType": "accessory"
         },
         {
           "slot": "ring",
-          "name": "Eredath Seal of Nobility",
+          "name": "Sickening Signet of Atroxus",
           "armorType": "accessory"
         },
         {
-          "slot": "ring",
-          "name": "Band of the Triumvirate",
-          "armorType": "accessory"
-        },
-
-        {
           "slot": "trinket",
-          "name": "Void Stalker's Contract",
+          "name": "Void Execution Mandate",
           "armorType": "accessory",
-          "stats": ["agility", "strength"]
+          "stats": ["strength", "agility"]
         },
         {
           "slot": "trinket",
-          "name": "Ampoule of Pure Void",
+          "name": "Tumor of the Swarm",
           "armorType": "accessory",
-          "stats": ["agility", "strength"]
+          "stats": ["strength", "agility"],
+          "roles": ["tank"]
         },
         {
           "slot": "trinket",
-          "name": "Reality Breacher",
+          "name": "Mindpiercer's Sigil",
           "armorType": "accessory",
           "stats": ["intellect"]
         },
         {
-          "slot": "trinket",
-          "name": "Echo of L'ura",
-          "armorType": "accessory",
-          "stats": ["intellect"]
-        },
-
-        {
           "slot": "head",
-          "name": "Shadow-Weaver's Crown",
+          "name": "Overseer's Diadem",
           "armorType": "cloth"
         },
         {
           "slot": "shoulders",
-          "name": "Viceroy's Umbral Mantle",
+          "name": "Poisoner's Pauldrons",
           "armorType": "cloth"
-        },
-        { "slot": "chest", "name": "Voidbender Robe", "armorType": "cloth" },
-        {
-          "slot": "wrist",
-          "name": "Entropic Wristwraps",
-          "armorType": "cloth"
-        },
-        {
-          "slot": "hands",
-          "name": "Handwraps of the Ascended",
-          "armorType": "cloth"
-        },
-        {
-          "slot": "legs",
-          "name": "Subjugator's Leggings",
-          "armorType": "cloth"
-        },
-
-        { "slot": "head", "name": "Voidlashed Hood", "armorType": "leather" },
-        {
-          "slot": "wrist",
-          "name": "Bracers of Dark Binding",
-          "armorType": "leather"
-        },
-        {
-          "slot": "hands",
-          "name": "Gloves of the Dark Shroud",
-          "armorType": "leather"
         },
         {
           "slot": "waist",
-          "name": "Cinch of the Umbral Lasher",
-          "armorType": "leather"
-        },
-        {
-          "slot": "legs",
-          "name": "Shifting Stalker Hide Pants",
-          "armorType": "leather"
-        },
-        {
-          "slot": "feet",
-          "name": "Footpads of Seeping Dread",
-          "armorType": "leather"
-        },
-
-        {
-          "slot": "shoulders",
-          "name": "Pauldrons of the Void Hunter",
-          "armorType": "mail"
-        },
-        { "slot": "chest", "name": "Void-Linked Robe", "armorType": "mail" },
-        {
-          "slot": "wrist",
-          "name": "Darkfang Scale Wristguards",
-          "armorType": "mail"
-        },
-        {
-          "slot": "waist",
-          "name": "Waistguard of Bound Energy",
-          "armorType": "mail"
-        },
-        {
-          "slot": "legs",
-          "name": "Leggings of Shifting Darkness",
-          "armorType": "mail"
-        },
-        {
-          "slot": "feet",
-          "name": "Black Dragonskin Breeches",
-          "armorType": "mail"
-        },
-
-        {
-          "slot": "head",
-          "name": "Crown of the Dark Envoy",
-          "armorType": "plate"
+          "name": "Ethereal Netherwrap",
+          "armorType": "cloth"
         },
         {
           "slot": "shoulders",
-          "name": "Pauldrons of the Broken",
-          "armorType": "plate"
+          "name": "Somber Spaulders",
+          "armorType": "leather"
         },
         {
           "slot": "chest",
-          "name": "Breastplate of the Dark Touch",
-          "armorType": "plate"
+          "name": "Hide of Pestilence",
+          "armorType": "leather"
         },
-        { "slot": "hands", "name": "Voidclaw Gauntlets", "armorType": "plate" },
         {
           "slot": "waist",
-          "name": "Girdle of the Shadowguard",
+          "name": "Gravitic Girdle",
+          "armorType": "leather"
+        },
+        {
+          "slot": "head",
+          "name": "Voidscarred Crown",
+          "armorType": "mail"
+        },
+        {
+          "slot": "chest",
+          "name": "Manipulator's Vest",
+          "armorType": "mail"
+        },
+        {
+          "slot": "waist",
+          "name": "Behemoth Waistband",
+          "armorType": "mail"
+        },
+        {
+          "slot": "feet",
+          "name": "Felsoaked Soles",
+          "armorType": "mail"
+        },
+        {
+          "slot": "head",
+          "name": "Visor of the Predator",
           "armorType": "plate"
         },
-        { "slot": "feet", "name": "Trap Jammers", "armorType": "plate" },
-
+        {
+          "slot": "hands",
+          "name": "Despondent's Gauntlets",
+          "armorType": "plate"
+        },
         {
           "slot": "main-hand",
-          "name": "Grips of the Dark Viceroy",
+          "name": "Hulking Handaxe",
           "armorType": "weapon",
-          "type": "fist",
+          "type": "axe",
+          "stats": ["strength", "agility"]
+        },
+        {
+          "slot": "main-hand",
+          "name": "Fang of Contagion",
+          "armorType": "weapon",
+          "type": "dagger",
+          "stats": ["agility", "intellect"]
+        },
+        {
+          "slot": "main-hand",
+          "name": "Taz'Rah's Cosmic Edge",
+          "armorType": "weapon",
+          "type": "sword",
+          "stats": ["agility", "intellect", "strength"]
+        },
+        {
+          "slot": "main-hand",
+          "name": "Singularity Slicer",
+          "armorType": "weapon",
+          "type": "warglaive",
           "stats": ["agility"]
         },
         {
-          "slot": "main-hand",
-          "name": "Scepter of the Endless Night",
-          "armorType": "weapon",
-          "type": "mace",
-          "stats": ["strength"]
-        },
-        {
-          "slot": "main-hand",
-          "name": "Wand of Saprish's Gaze",
-          "armorType": "weapon",
-          "type": "wand",
-          "stats": ["intellect"]
-        },
-
-        {
           "slot": "two-hand",
-          "name": "Umbral Spire of Zuraal",
+          "name": "Charonic Crescent",
           "armorType": "weapon",
-          "type": "staff",
-          "stats": ["intellect"]
-        },
-
-        {
-          "slot": "trinket",
-          "name": "Nezhar's Netherclaw",
-          "armorType": "accessory",
-          "stats": ["intellect"]
-        },
-
-        {
-          "slot": "feet",
-          "name": "Slippers of Growing Despair",
-          "armorType": "cloth"
+          "type": "polearm",
+          "stats": ["strength", "agility"]
         }
       ]
     },
-
     {
-      "name": "Skyreach",
+      "name": "Den of Nalorakk",
       "loot": [
         {
-          "slot": "back",
-          "name": "Rigid Scale Greatcloak",
+          "slot": "neck",
+          "name": "Yoke of the Charging Bear",
           "armorType": "accessory"
         },
-
         {
-          "slot": "trinket",
-          "name": "Solarflare Prism",
-          "armorType": "accessory",
-          "stats": ["agility", "strength"]
+          "slot": "ring",
+          "name": "Pilfered Precious Band",
+          "armorType": "accessory"
         },
         {
           "slot": "trinket",
-          "name": "Solar Core Igniter",
+          "name": "Mycolic Medicine",
           "armorType": "accessory",
-          "stats": ["agility", "strength"]
+          "stats": ["intellect"],
+          "roles": ["healer"]
         },
         {
           "slot": "trinket",
-          "name": "Radiant Sunstone",
+          "name": "Permafrost Essence",
           "armorType": "accessory",
-          "stats": ["intellect"]
+          "stats": ["strength", "agility"],
+          "roles": ["tank"]
         },
-
         {
-          "slot": "shoulders",
-          "name": "Lightbinder Shoulderguards",
+          "slot": "trinket",
+          "name": "Idol of the War Loa",
+          "armorType": "accessory",
+          "stats": ["strength", "agility"]
+        },
+        {
+          "slot": "chest",
+          "name": "Hoarded Harvest Wrap",
           "armorType": "cloth"
         },
         {
           "slot": "wrist",
-          "name": "Bracers of Blazing Light",
+          "name": "Winter's Embrace Bracers",
           "armorType": "cloth"
         },
         {
           "slot": "legs",
-          "name": "Legwraps of Swirling Light",
+          "name": "Forest Dream Leg-guards",
           "armorType": "cloth"
         },
-        { "slot": "feet", "name": "Lightbinder Treads", "armorType": "cloth" },
-
         {
           "slot": "shoulders",
-          "name": "Bloodfeather Mantle",
+          "name": "Scavenger's Spaulders",
           "armorType": "leather"
         },
         {
           "slot": "chest",
-          "name": "Bloodfeather Chestguard",
+          "name": "War Trial Vestments",
           "armorType": "leather"
         },
         {
           "slot": "feet",
-          "name": "Boots of Burning Focus",
+          "name": "Arctic Explorer's Legwraps",
           "armorType": "leather"
         },
-
-        { "slot": "head", "name": "Sharpeye Gleam", "armorType": "mail" },
-        { "slot": "chest", "name": "Sharpeye Chestguard", "armorType": "mail" },
-        { "slot": "feet", "name": "Rigid Scale Boots", "armorType": "mail" },
-
         {
           "slot": "head",
-          "name": "Gutcrusher Greathelm",
-          "armorType": "plate"
+          "name": "Nalorakk's Nightmare",
+          "armorType": "mail"
         },
         {
-          "slot": "shoulders",
-          "name": "Spaulders of Scorching Ray",
+          "slot": "hands",
+          "name": "Season's Turn Gauntlets",
+          "armorType": "mail"
+        },
+        {
+          "slot": "waist",
+          "name": "Tribal Defender's Cord",
+          "armorType": "mail"
+        },
+        {
+          "slot": "feet",
+          "name": "Forgotten Tribe Footguards",
+          "armorType": "mail"
+        },
+        {
+          "slot": "chest",
+          "name": "Sentinel Challenger's Prize",
           "armorType": "plate"
         },
         {
           "slot": "hands",
-          "name": "Incarnadine Gauntlets",
+          "name": "Bonds of the Hash'ura",
           "armorType": "plate"
         },
-
         {
-          "slot": "main-hand",
-          "name": "Edge of the Burning Sun",
-          "armorType": "weapon",
-          "type": "dagger",
-          "stats": ["agility"]
+          "slot": "waist",
+          "name": "Autumn's Boon Belt",
+          "armorType": "plate"
         },
         {
           "slot": "main-hand",
-          "name": "Blazing Sunclaws",
+          "name": "Grim Harvest Gloves",
           "armorType": "weapon",
           "type": "fist",
           "stats": ["agility"]
         },
-        {
-          "slot": "main-hand",
-          "name": "Arcanic of the High Sage",
-          "armorType": "weapon",
-          "type": "fist",
-          "stats": ["intellect"]
-        },
-        {
-          "slot": "main-hand",
-          "name": "Beakbreaker Scimitar",
-          "armorType": "weapon",
-          "type": "sword",
-          "stats": ["strength"]
-        },
-        {
-          "slot": "main-hand",
-          "name": "Skybreaker's Blade",
-          "armorType": "weapon",
-          "type": "sword",
-          "stats": ["intellect"]
-        },
-
         {
           "slot": "two-hand",
-          "name": "Sunlance of Viryx",
+          "name": "Victor's Flashfrozen Blade",
           "armorType": "weapon",
           "type": "polearm",
-          "stats": ["agility"]
+          "stats": ["strength", "agility"]
         },
         {
           "slot": "two-hand",
-          "name": "Spire of the Furious Construct",
+          "name": "Fallen Speaker's Staff",
           "armorType": "weapon",
           "type": "staff",
-          "stats": ["intellect"]
+          "stats": ["intellect", "agility"]
         },
-        {
-          "slot": "two-hand",
-          "name": "Chakram-Breaker Greatsword",
-          "armorType": "weapon",
-          "type": "sword",
-          "stats": ["strength"]
-        },
-
-        {
-          "slot": "ranged",
-          "name": "Stormshaper's Crossbow",
-          "armorType": "weapon",
-          "type": "crossbow",
-          "stats": ["agility"]
-        },
-
         {
           "slot": "off-hand",
-          "name": "Rukhran's Solar Reliquary",
+          "name": "Perennial Frostbound Charm",
           "armorType": "weapon",
           "type": "off-hand",
           "stats": ["intellect"]
         },
         {
           "slot": "shield",
-          "name": "Viryx's Indomitable Bulwark",
+          "name": "Tempest's Shelter",
           "armorType": "weapon",
           "type": "shield",
-          "stats": ["intellect", "strength"]
+          "stats": ["strength", "intellect"]
         }
       ]
     },
-
     {
-      "name": "Maisara Caverns",
+      "name": "The Blinding Vale",
       "loot": [
         {
-          "slot": "back",
-          "name": "Soulhunter's Mask",
+          "slot": "ring",
+          "name": "Lightwarden's Bind",
           "armorType": "accessory"
         },
-
+        {
+          "slot": "back",
+          "name": "Bloodthorn Burnous",
+          "armorType": "accessory"
+        },
         {
           "slot": "trinket",
-          "name": "Vessel of Tortured Souls",
+          "name": "Seed of Radiant Hope",
           "armorType": "accessory",
-          "stats": ["mastery"]
+          "stats": ["intellect"],
+          "roles": ["healer"]
         },
-
-        { "slot": "hands", "name": "Vilehex Bonds", "armorType": "cloth" },
-        { "slot": "feet", "name": "Nightprey Stalkers", "armorType": "cloth" },
-
-        { "slot": "head", "name": "Fetid Vilecrown", "armorType": "leather" },
         {
-          "slot": "shoulders",
-          "name": "Enthralled Bonespines",
-          "armorType": "leather"
+          "slot": "trinket",
+          "name": "Seed of the Devouring Wild",
+          "armorType": "accessory",
+          "stats": ["strength", "agility"]
         },
-        { "slot": "waist", "name": "Falconer's Cinch", "armorType": "leather" },
-
         {
-          "slot": "shoulders",
-          "name": "Reanimator's Weight",
-          "armorType": "mail"
+          "slot": "trinket",
+          "name": "Lightspire Core",
+          "armorType": "accessory",
+          "stats": ["intellect"]
         },
-        { "slot": "chest", "name": "Decaying Cuirass", "armorType": "mail" },
-        { "slot": "legs", "name": "Wickedweave Trousers", "armorType": "mail" },
-
         {
-          "slot": "shoulders",
-          "name": "Amalgamation's Harness",
-          "armorType": "plate"
+          "slot": "trinket",
+          "name": "Sapling of the Dawnroot",
+          "armorType": "accessory",
+          "stats": ["intellect", "agility", "strength"]
+        },
+        {
+          "slot": "head",
+          "name": "Worldroot Canopy",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "waist",
+          "name": "Lightblossom Cinch",
+          "armorType": "cloth"
         },
         {
           "slot": "wrist",
-          "name": "Trollhunter's Bands",
+          "name": "Rootwarden Wraps",
+          "armorType": "leather"
+        },
+        {
+          "slot": "waist",
+          "name": "Rootwalker Harness",
+          "armorType": "leather"
+        },
+        {
+          "slot": "legs",
+          "name": "Lightspore Leggings",
+          "armorType": "leather"
+        },
+        {
+          "slot": "shoulders",
+          "name": "Ironroot Collar",
+          "armorType": "mail"
+        },
+        {
+          "slot": "wrist",
+          "name": "Saptorbane Guards",
+          "armorType": "mail"
+        },
+        {
+          "slot": "hands",
+          "name": "Pulverizing Pads",
+          "armorType": "mail"
+        },
+        {
+          "slot": "chest",
+          "name": "Taproot Ribs",
           "armorType": "plate"
         },
         {
-          "slot": "feet",
-          "name": "Footwraps of Ill-Fate",
+          "slot": "hands",
+          "name": "Thornspike Gauntlets",
           "armorType": "plate"
         },
-
+        {
+          "slot": "legs",
+          "name": "Bedrock Breeches",
+          "armorType": "plate"
+        },
         {
           "slot": "main-hand",
-          "name": "Soulblight Cleaver",
+          "name": "Thornblade",
           "armorType": "weapon",
-          "type": "axe",
+          "type": "dagger",
+          "stats": ["agility", "intellect"]
+        },
+        {
+          "slot": "main-hand",
+          "name": "Thorntalon Edge",
+          "armorType": "weapon",
+          "type": "fist",
           "stats": ["agility"]
         },
         {
           "slot": "main-hand",
-          "name": "Ceremonial Hexblade",
+          "name": "Thorned Reply",
+          "armorType": "weapon",
+          "type": "sword",
+          "stats": ["strength", "agility", "intellect"]
+        },
+        {
+          "slot": "two-hand",
+          "name": "Pruning Lance",
+          "armorType": "weapon",
+          "type": "polearm",
+          "stats": ["strength", "agility"]
+        },
+        {
+          "slot": "two-hand",
+          "name": "Branch of Pride",
+          "armorType": "weapon",
+          "type": "staff",
+          "stats": ["intellect", "agility"]
+        },
+        {
+          "slot": "ranged",
+          "name": "Amirdrassil's Reach",
+          "armorType": "weapon",
+          "type": "crossbow",
+          "stats": ["agility"]
+        },
+        {
+          "slot": "main-hand",
+          "name": "Doompetal",
+          "armorType": "weapon",
+          "type": "wand",
+          "stats": ["intellect"]
+        },
+        {
+          "slot": "off-hand",
+          "name": "Luminescent Sprout",
+          "armorType": "weapon",
+          "type": "off-hand",
+          "stats": ["intellect"]
+        },
+        {
+          "slot": "shield",
+          "name": "Teldrassil's Sacrifice",
+          "armorType": "weapon",
+          "type": "shield",
+          "stats": ["strength", "intellect"]
+        }
+      ]
+    },
+    {
+      "name": "Temple of Sethraliss",
+      "loot": [
+        {
+          "slot": "ring",
+          "name": "Jade Ophidian Band",
+          "armorType": "accessory"
+        },
+        {
+          "slot": "ring",
+          "name": "Charged Sandstone Band",
+          "armorType": "accessory"
+        },
+        {
+          "slot": "trinket",
+          "name": "Merektha's Fang",
+          "armorType": "accessory",
+          "stats": ["agility", "strength"]
+        },
+        {
+          "slot": "trinket",
+          "name": "Tiny Electromental in a Jar",
+          "armorType": "accessory",
+          "stats": ["strength", "agility", "intellect"]
+        },
+        {
+          "slot": "trinket",
+          "name": "Sethraliss' Defiled Relic",
+          "armorType": "accessory",
+          "stats": ["intellect"],
+          "roles": ["healer"]
+        },
+        {
+          "slot": "shoulders",
+          "name": "Brood Cleanser's Amice",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "chest",
+          "name": "Robes of the Reborn Serpent",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "wrist",
+          "name": "Bindings of the Slithering Current",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "hands",
+          "name": "Handwraps of Oscillating Polarity",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "waist",
+          "name": "Ouroborial Sash",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "feet",
+          "name": "Sandswept Sandals",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "head",
+          "name": "Hood of the Slithering Loa",
+          "armorType": "leather"
+        },
+        {
+          "slot": "hands",
+          "name": "Grips of Electrified Defense",
+          "armorType": "leather"
+        },
+        {
+          "slot": "waist",
+          "name": "Whirling Dervish Sash",
+          "armorType": "leather"
+        },
+        {
+          "slot": "legs",
+          "name": "Leggings of the Galeforce Viper",
+          "armorType": "leather"
+        },
+        {
+          "slot": "feet",
+          "name": "Sand-Shined Snakeskin Sandals",
+          "armorType": "leather"
+        },
+        {
+          "slot": "head",
+          "name": "Sethraliss' Fanged Helm",
+          "armorType": "mail"
+        },
+        {
+          "slot": "chest",
+          "name": "Corrupted Hexxer's Vestments",
+          "armorType": "mail"
+        },
+        {
+          "slot": "wrist",
+          "name": "Arc-Glass Bindings",
+          "armorType": "mail"
+        },
+        {
+          "slot": "legs",
+          "name": "Legguards of the Awakening Brood",
+          "armorType": "mail"
+        },
+        {
+          "slot": "feet",
+          "name": "Sabatons of Coruscating Energy",
+          "armorType": "mail"
+        },
+        {
+          "slot": "shoulders",
+          "name": "C'thraxxi Binders Pauldrons",
+          "armorType": "plate"
+        },
+        {
+          "slot": "chest",
+          "name": "Desert Guardian's Breastplate",
+          "armorType": "plate"
+        },
+        {
+          "slot": "wrist",
+          "name": "Shard-Tipped Vambraces",
+          "armorType": "plate"
+        },
+        {
+          "slot": "hands",
+          "name": "Fangproof Gauntlets",
+          "armorType": "plate"
+        },
+        {
+          "slot": "waist",
+          "name": "Sand-Scoured Greatbelt",
+          "armorType": "plate"
+        },
+        {
+          "slot": "legs",
+          "name": "Legplates of Charged Duality",
+          "armorType": "plate"
+        },
+        {
+          "slot": "main-hand",
+          "name": "Galvanized Stormcrusher",
+          "armorType": "weapon",
+          "type": "mace",
+          "stats": ["intellect"]
+        },
+        {
+          "slot": "main-hand",
+          "name": "Swarm's Edge",
+          "armorType": "weapon",
+          "type": "sword",
+          "stats": ["agility"]
+        },
+        {
+          "slot": "main-hand",
+          "name": "Resonating Crystal Scimitar",
+          "armorType": "weapon",
+          "type": "sword",
+          "stats": ["intellect"]
+        },
+        {
+          "slot": "two-hand",
+          "name": "Twin-Strike Polearm",
+          "armorType": "weapon",
+          "type": "polearm",
+          "stats": ["strength", "agility"]
+        },
+        {
+          "slot": "two-hand",
+          "name": "Staff of the Lightning Serpent",
+          "armorType": "weapon",
+          "type": "staff",
+          "stats": ["intellect"]
+        },
+        {
+          "slot": "ranged",
+          "name": "Snakebite Recurve",
+          "armorType": "weapon",
+          "type": "bow",
+          "stats": ["agility"]
+        }
+      ]
+    },
+    {
+      "name": "Kings' Rest",
+      "loot": [
+        {
+          "slot": "ring",
+          "name": "Ritual Binder's Ring",
+          "armorType": "accessory"
+        },
+        {
+          "slot": "back",
+          "name": "Cloak of the Restless Tribes",
+          "armorType": "accessory"
+        },
+        {
+          "slot": "trinket",
+          "name": "Lustrous Golden Plumage",
+          "armorType": "accessory",
+          "stats": ["agility", "strength"]
+        },
+        {
+          "slot": "trinket",
+          "name": "Mchimba's Ritual Bandages",
+          "armorType": "accessory",
+          "stats": ["strength", "agility"],
+          "roles": ["tank"]
+        },
+        {
+          "slot": "trinket",
+          "name": "Stormbound Emblem of Dazar",
+          "armorType": "accessory",
+          "stats": ["strength", "agility", "intellect"]
+        },
+        {
+          "slot": "head",
+          "name": "Headdress of the First Empire",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "shoulders",
+          "name": "Mantle of Ceremonial Ascension",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "legs",
+          "name": "Down-Lined Breeches",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "feet",
+          "name": "Sandals of Wise Voodoo",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "chest",
+          "name": "Vest of Reverent Adoration",
+          "armorType": "leather"
+        },
+        {
+          "slot": "wrist",
+          "name": "Kula's Butchering Wristwraps",
+          "armorType": "leather"
+        },
+        {
+          "slot": "hands",
+          "name": "Desiccator's Blessed Gloves",
+          "armorType": "leather"
+        },
+        {
+          "slot": "waist",
+          "name": "Primal Dinomancer's Belt",
+          "armorType": "leather"
+        },
+        {
+          "slot": "legs",
+          "name": "Breeches of the Sacred Hall",
+          "armorType": "leather"
+        },
+        {
+          "slot": "feet",
+          "name": "Goldfeather Boots",
+          "armorType": "leather"
+        },
+        {
+          "slot": "shoulders",
+          "name": "Spaulders of Prime Emperor",
+          "armorType": "mail"
+        },
+        {
+          "slot": "chest",
+          "name": "Loa-Blessed Chestguard",
+          "armorType": "mail"
+        },
+        {
+          "slot": "hands",
+          "name": "Sepulchral Construct's Gloves",
+          "armorType": "mail"
+        },
+        {
+          "slot": "feet",
+          "name": "Boots of the Headlong Conqueror",
+          "armorType": "mail"
+        },
+        {
+          "slot": "head",
+          "name": "Helm of the Raptor King",
+          "armorType": "plate"
+        },
+        {
+          "slot": "shoulders",
+          "name": "Pauldrons of the Great Unifier",
+          "armorType": "plate"
+        },
+        {
+          "slot": "wrist",
+          "name": "Embalmer's Steadying Bracers",
+          "armorType": "plate"
+        },
+        {
+          "slot": "hands",
+          "name": "Gauntlets of the Avian Sentinel",
+          "armorType": "plate"
+        },
+        {
+          "slot": "waist",
+          "name": "Girdle of Pestilent Purification",
+          "armorType": "plate"
+        },
+        {
+          "slot": "feet",
+          "name": "Auric Puddle Stompers",
+          "armorType": "plate"
+        },
+        {
+          "slot": "main-hand",
+          "name": "Gilded Serpent's Tooth",
           "armorType": "weapon",
           "type": "dagger",
           "stats": ["intellect"]
         },
         {
           "slot": "main-hand",
-          "name": "Berserker's Hexclaws",
+          "name": "Jeweled Dagger of Subjugation",
           "armorType": "weapon",
-          "type": "fist",
+          "type": "dagger",
           "stats": ["agility"]
         },
-
+        {
+          "slot": "main-hand",
+          "name": "Headcracker of Supplication",
+          "armorType": "weapon",
+          "type": "mace",
+          "stats": ["strength"]
+        },
+        {
+          "slot": "main-hand",
+          "name": "Crackling Jade Kilij",
+          "armorType": "weapon",
+          "type": "sword",
+          "stats": ["agility", "strength"]
+        },
         {
           "slot": "two-hand",
-          "name": "Traitor's Talon",
+          "name": "Royal Purifier's Spade",
           "armorType": "weapon",
           "type": "polearm",
-          "stats": ["agility"]
+          "stats": ["strength", "agility"]
         },
-
-        {
-          "slot": "trinket",
-          "name": "Soulcatcher's Charm",
-          "armorType": "accessory",
-          "stats": ["intellect"]
-        },
-
         {
           "slot": "two-hand",
-          "name": "Liferipper's Cutlass",
+          "name": "Geti'ikku, Cut of Death",
           "armorType": "weapon",
           "type": "sword",
           "stats": ["strength"]
         },
-
         {
           "slot": "ranged",
-          "name": "Deceiver's Rotbow",
+          "name": "Crossbow of Forgotten Majesty",
           "armorType": "weapon",
-          "type": "bow",
+          "type": "crossbow",
           "stats": ["agility"]
+        },
+        {
+          "slot": "off-hand",
+          "name": "Vessel of Last Rites",
+          "armorType": "weapon",
+          "type": "off-hand",
+          "stats": ["intellect"]
+        },
+        {
+          "slot": "shield",
+          "name": "Bulwark of Brimming Potential",
+          "armorType": "weapon",
+          "type": "shield",
+          "stats": ["strength", "intellect"]
+        }
+      ]
+    },
+    {
+      "name": "Ruby Life Pools",
+      "loot": [
+        {
+          "slot": "back",
+          "name": "Fireproof Drape",
+          "armorType": "accessory"
+        },
+        {
+          "slot": "trinket",
+          "name": "Ruby Whelp Shell",
+          "armorType": "accessory",
+          "stats": ["strength", "agility", "intellect"]
+        },
+        {
+          "slot": "trinket",
+          "name": "Blazebinder's Hoof",
+          "armorType": "accessory",
+          "stats": ["strength", "agility"]
+        },
+        {
+          "slot": "trinket",
+          "name": "Kyrakka's Searing Embers",
+          "armorType": "accessory",
+          "stats": ["intellect"],
+          "roles": ["healer"]
+        },
+        {
+          "slot": "waist",
+          "name": "Sky Saddle Cord",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "legs",
+          "name": "Wind Soarer's Breeches",
+          "armorType": "cloth"
+        },
+        {
+          "slot": "head",
+          "name": "Crown of Roaring Storms",
+          "armorType": "leather"
+        },
+        {
+          "slot": "chest",
+          "name": "Invader's Firestorm Chestguard",
+          "armorType": "leather"
+        },
+        {
+          "slot": "hands",
+          "name": "Subjugator's Chilling Grips",
+          "armorType": "leather"
+        },
+        {
+          "slot": "head",
+          "name": "Blazebound Lieutenant's Helm",
+          "armorType": "mail"
+        },
+        {
+          "slot": "hands",
+          "name": "Galerattle Gauntlets",
+          "armorType": "mail"
+        },
+        {
+          "slot": "legs",
+          "name": "Egg Tender's Leggings",
+          "armorType": "mail"
+        },
+        {
+          "slot": "chest",
+          "name": "Breastplate of Soaring Terror",
+          "armorType": "plate"
+        },
+        {
+          "slot": "feet",
+          "name": "Scaleguard's Stalwart Greatboots",
+          "armorType": "plate"
+        },
+        {
+          "slot": "main-hand",
+          "name": "Skyferno Rondel",
+          "armorType": "weapon",
+          "type": "dagger",
+          "stats": ["agility"]
+        },
+        {
+          "slot": "main-hand",
+          "name": "Havoc Crusher",
+          "armorType": "weapon",
+          "type": "mace",
+          "stats": ["strength"]
+        },
+        {
+          "slot": "two-hand",
+          "name": "Backdraft Cleaver",
+          "armorType": "weapon",
+          "type": "axe",
+          "stats": ["strength"]
+        },
+        {
+          "slot": "two-hand",
+          "name": "Chillworn's Infusion Staff",
+          "armorType": "weapon",
+          "type": "staff",
+          "stats": ["intellect"]
+        },
+        {
+          "slot": "off-hand",
+          "name": "Kokia's Burnout Rod",
+          "armorType": "weapon",
+          "type": "off-hand",
+          "stats": ["intellect"]
+        },
+        {
+          "slot": "shield",
+          "name": "Drake Rider's Stecktarge",
+          "armorType": "weapon",
+          "type": "shield",
+          "stats": ["strength", "intellect"]
         }
       ]
     }

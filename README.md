@@ -66,17 +66,17 @@ WoWClass { id, name, color, specs[] }
 
 ### Loot Data (`src/lib/data/loot.json`)
 
-Contains 8 dungeons with item-level loot tables:
-- Algeth'ar Academy
-- Magisters' Terrace
-- Maisara Caverns
-- Nexus-Point Xenas
-- Pit of Saron
-- Seat of the Triumvirate
-- Skyreach
-- Windrunner Spire
+Contains the current Mythic+ season's 8 dungeons with full loot tables:
+- Altar of Fangs
+- Den of Nalorakk
+- Kings' Rest
+- Murder Row
+- Ruby Life Pools
+- Temple of Sethraliss
+- The Blinding Vale
+- Voidscar Arena
 
-Each item has: `slot`, `name`, `armorType` (cloth/leather/mail/plate/accessory)
+Each item has: `slot`, `name`, `armorType` (cloth/leather/mail/plate/accessory/weapon), optional `type` (weapon subtype), `stats` (primary stats) and `roles` (tank/healer restrictions for trinkets).
 
 ### Constants (`src/lib/constants.ts`)
 
@@ -173,6 +173,6 @@ npm run check        # TypeScript/Svelte type checking
 
 ## Notes
 
-- Data in `loot.json` is sample/example data, not from Blizzard
+- Data in `loot.json` reflects the current M+ season; verify against in-game loot tables
 - Not affiliated with Blizzard Entertainment
 - Calculations are for educational purposes and may not reflect actual game mechanics

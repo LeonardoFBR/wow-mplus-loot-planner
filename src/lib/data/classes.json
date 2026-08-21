@@ -17,7 +17,7 @@
         "name": "Fury",
         "role": "dps",
         "stat": "strength",
-        "weaponTypes": ["axe", "mace", "sword"]
+        "weaponTypes": ["axe", "mace", "sword", "polearm"]
       },
       {
         "id": "warrior_protection",
@@ -39,7 +39,7 @@
         "name": "Holy",
         "role": "healer",
         "stat": "intellect",
-        "weaponTypes": ["mace", "sword", "shield"]
+        "weaponTypes": ["mace", "sword", "shield", "off-hand", "polearm", "axe"]
       },
       {
         "id": "paladin_protection",
@@ -82,7 +82,7 @@
         "name": "Survival",
         "role": "dps",
         "stat": "agility",
-        "weaponTypes": ["polearm", "staff", "axe"]
+        "weaponTypes": ["polearm", "staff", "axe", "sword"]
       }
     ]
   },
@@ -104,9 +104,15 @@
         "name": "Outlaw",
         "role": "dps",
         "stat": "agility",
-        "weaponTypes": ["axe", "mace", "sword"]
+        "weaponTypes": ["axe", "mace", "sword", "fist", "dagger"]
       },
-      { "id": "rogue_subtlety", "name": "Subtlety", "role": "dps", "stat": "agility", "weaponTypes": ["dagger"] }
+      {
+        "id": "rogue_subtlety",
+        "name": "Subtlety",
+        "role": "dps",
+        "stat": "agility",
+        "weaponTypes": ["dagger"]
+      }
     ]
   },
   {
@@ -156,7 +162,7 @@
         "name": "Frost",
         "role": "dps",
         "stat": "strength",
-        "weaponTypes": ["axe", "mace", "sword"]
+        "weaponTypes": ["axe", "mace", "sword", "polearm"]
       },
       {
         "id": "death_knight_unholy",
@@ -178,21 +184,21 @@
         "name": "Elemental",
         "role": "dps",
         "stat": "intellect",
-        "weaponTypes": ["mace", "dagger", "staff", "off-hand"]
+        "weaponTypes": ["mace", "dagger", "staff", "shield", "off-hand", "axe", "fist"]
       },
       {
         "id": "shaman_enhancement",
         "name": "Enhancement",
         "role": "dps",
         "stat": "agility",
-        "weaponTypes": ["axe", "mace", "fist"]
+        "weaponTypes": ["axe", "mace", "fist", "dagger"]
       },
       {
         "id": "shaman_restoration",
         "name": "Restoration",
         "role": "healer",
         "stat": "intellect",
-        "weaponTypes": ["mace", "dagger", "staff", "shield"]
+        "weaponTypes": ["mace", "dagger", "staff", "shield", "off-hand", "axe"]
       }
     ]
   },
@@ -265,21 +271,21 @@
         "name": "Brewmaster",
         "role": "tank",
         "stat": "agility",
-        "weaponTypes": ["staff", "polearm"]
+        "weaponTypes": ["staff", "polearm", "fist", "axe", "mace", "sword"]
       },
       {
         "id": "monk_windwalker",
         "name": "Windwalker",
         "role": "dps",
         "stat": "agility",
-        "weaponTypes": ["fist", "axe", "mace", "sword"]
+        "weaponTypes": ["fist", "axe", "mace", "sword", "staff", "polearm"]
       },
       {
         "id": "monk_mistweaver",
         "name": "Mistweaver",
         "role": "healer",
         "stat": "intellect",
-        "weaponTypes": ["staff", "off-hand"]
+        "weaponTypes": ["staff", "off-hand", "mace", "sword", "fist", "axe"]
       }
     ]
   },
@@ -294,22 +300,28 @@
         "name": "Balance",
         "role": "dps",
         "stat": "intellect",
-        "weaponTypes": ["staff", "off-hand"]
+        "weaponTypes": ["staff", "off-hand", "mace", "dagger", "polearm"]
       },
-      { "id": "druid_feral", "name": "Feral", "role": "dps", "stat": "agility", "weaponTypes": ["staff", "polearm"] },
+      {
+        "id": "druid_feral",
+        "name": "Feral",
+        "role": "dps",
+        "stat": "agility",
+        "weaponTypes": ["staff", "polearm", "mace", "dagger", "fist"]
+      },
       {
         "id": "druid_guardian",
         "name": "Guardian",
         "role": "tank",
         "stat": "agility",
-        "weaponTypes": ["staff", "polearm"]
+        "weaponTypes": ["staff", "polearm", "mace", "dagger", "fist"]
       },
       {
         "id": "druid_restoration",
         "name": "Restoration",
         "role": "healer",
         "stat": "intellect",
-        "weaponTypes": ["staff", "off-hand"]
+        "weaponTypes": ["staff", "off-hand", "mace", "dagger"]
       }
     ]
   },
@@ -319,13 +331,19 @@
     "color": "#A330C9",
     "armorType": "leather",
     "specs": [
-      { "id": "demon_hunter_havoc", "name": "Havoc", "role": "dps", "stat": "agility", "weaponTypes": ["warglaives"] },
+      {
+        "id": "demon_hunter_havoc",
+        "name": "Havoc",
+        "role": "dps",
+        "stat": "agility",
+        "weaponTypes": ["warglaive", "warglaives", "sword", "axe", "fist"]
+      },
       {
         "id": "demon_hunter_vengeance",
         "name": "Vengeance",
         "role": "tank",
         "stat": "agility",
-        "weaponTypes": ["warglaives"]
+        "weaponTypes": ["warglaive", "warglaives", "sword", "axe", "fist"]
       }
     ]
   },
@@ -340,21 +358,21 @@
         "name": "Devastation",
         "role": "dps",
         "stat": "intellect",
-        "weaponTypes": ["staff", "off-hand"]
+        "weaponTypes": ["staff", "off-hand", "dagger", "sword", "mace", "fist", "axe"]
       },
       {
         "id": "evoker_preservation",
         "name": "Preservation",
         "role": "healer",
         "stat": "intellect",
-        "weaponTypes": ["staff", "off-hand"]
+        "weaponTypes": ["staff", "off-hand", "dagger", "sword", "mace", "fist", "axe"]
       },
       {
         "id": "evoker_augmentation",
         "name": "Augmentation",
         "role": "dps",
         "stat": "intellect",
-        "weaponTypes": ["staff", "off-hand"]
+        "weaponTypes": ["staff", "off-hand", "dagger", "sword", "mace", "fist", "axe"]
       }
     ]
   }

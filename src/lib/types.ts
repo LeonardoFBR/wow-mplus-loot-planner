@@ -4,6 +4,7 @@ export interface LootItem {
 	armorType?: string;
 	type?: string;
 	stats?: string[];
+	roles?: string[];
 }
 
 export interface Dungeon {
@@ -29,6 +30,7 @@ export interface GearSlot {
 export type Spec = {
 	id: string;
 	name: string;
+	role?: string;
 	stat: string;
 	weaponTypes: string[];
 };

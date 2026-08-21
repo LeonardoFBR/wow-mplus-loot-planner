@@ -69,30 +69,58 @@ function hasPrimaryStat(stats: string[]): boolean {
 export function isItemEligible(item: LootItem, cls?: WoWClass, spec?: Spec): boolean {
 	if (!cls) return true;
 
+	// Check role eligibility if specified on item (e.g. Tank/Healer trinkets)
+	if (item.roles && item.roles.length > 0) {
+		if (spec?.role) {
+			if (!item.roles.includes(spec.role)) return false;
+		} else if (cls) {
+			if (!cls.specs.some(s => s.role && item.roles!.includes(s.role))) return false;
+		}
+	}
+
+	// Armor type check
 	if (item.armorType && item.armorType !== 'accessory' && item.armorType !== 'weapon') {
 		return item.armorType === cls.armorType;
 	}
 
+	// Weapon check
 	if (item.armorType === 'weapon') {
 		if (!item.type) return false;
 
 		const weaponTypes = getClassWeaponTypes(cls, spec);
-		if (!weaponTypes.includes(item.type)) return false;
+		const normalizedItemType = item.type.toLowerCase().replace(/s$/, '').replace(/ weapon$/, '');
+		const matchesType = weaponTypes.some(wt => {
+			const normalizedWt = wt.toLowerCase().replace(/s$/, '').replace(/ weapon$/, '');
+			return normalizedWt === normalizedItemType || wt === item.type;
+		});
 
+		if (!matchesType) return false;
+
+		const itemStats = getItemStats(item);
 		if (spec?.stat) {
-			const itemStats = getItemStats(item);
-			if (itemStats.length > 0) {
+			if (itemStats.length > 0 && hasPrimaryStat(itemStats)) {
 				return itemStats.includes(spec.stat.toLowerCase());
+			}
+		} else if (cls) {
+			const clsStats = new Set(cls.specs.map(s => s.stat.toLowerCase()));
+			if (itemStats.length > 0 && hasPrimaryStat(itemStats)) {
+				return itemStats.some(stat => clsStats.has(stat));
 			}
 		}
 
 		return true;
 	}
 
-	if (item.armorType === 'accessory' && spec?.stat) {
+	// Accessory check (e.g. Trinkets with specific primary stats)
+	if (item.armorType === 'accessory') {
 		const itemStats = getItemStats(item);
 		if (itemStats.length > 0 && hasPrimaryStat(itemStats)) {
-			return itemStats.includes(spec.stat.toLowerCase());
+			if (spec?.stat) {
+				return itemStats.includes(spec.stat.toLowerCase());
+			} else if (cls) {
+				const clsStats = new Set(cls.specs.map(s => s.stat.toLowerCase()));
+				return itemStats.some(stat => clsStats.has(stat));
+			}
 		}
 	}
 
